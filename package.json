@@ -1,0 +1,12 @@
+{
+  "name": "2intro-component-with-signuoform",
+  "version": "1.0.0",
+  "description": "challenge frontend Mentor signform",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server --open=index.html &"
+  },
+  "author": "Francisco Jimenez <frankiiize@gmail.com>",
+  "license": "ISC"
+}
