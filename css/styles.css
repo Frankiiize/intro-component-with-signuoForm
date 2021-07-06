@@ -120,7 +120,8 @@ body {
   border: none;
   border-bottom: 3px solid #34b77e;
 }
-.trialContainer__register__form__sendBtn input {
+.trialContainer__register__form__sendBtn button {
+  border: none;
   text-transform: uppercase;
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;

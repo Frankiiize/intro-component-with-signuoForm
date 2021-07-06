@@ -25,21 +25,21 @@
         <p><strong>Try it free 7 days </strong>then $20/mo. thereafter</p>
       </div>
       <div class="trialContainer__register">
-        <form class="trialContainer__register__form" action="#">
+        <form class="trialContainer__register__form" id="form">
           <label class="trialContainer__register__form__label" for="name">
-            <input type="text" id="name" name="name"  placeholder="First Name">
+            <input type="text" id="name" autocomplete="name" name="name"  placeholder="First Name">
           </label>
           <label class="trialContainer__register__form__label" for="lastName">
-            <input type="text" id="lastName" name="lastName"  placeholder="Last Name">
+            <input type="text" id="lastName" autocomplete="family-name" name="lastName"  placeholder="Last Name">
           </label>
           <label class="trialContainer__register__form__label" for="Email">
-            <input type="email" id="email" name="email"  placeholder="Email Address">
+            <input type="email" id="email" autocomplete="email" name="email"  placeholder="Email Address">
           </label>
           <label class="trialContainer__register__form__label" for="password">
-            <input type="password" id="password" name="password" placeholder="Password">
+            <input type="password" id="password" autocomplete="current-password" name="password" placeholder="Password">
           </label>
           <label class="trialContainer__register__form__sendBtn">
-            <input type="submit" value="Claim your free trial">
+            <button  id="sumitBtn" type="submit" value="Claim your free trial">Claim your free trial</button>
           </label>
         </form>
         <div class="trialContainer__register__terms">
@@ -56,5 +56,6 @@
       </p>
     </footer> -->
   </div>
+  <script src="src/index.js"></script>
 </body>
 </html>

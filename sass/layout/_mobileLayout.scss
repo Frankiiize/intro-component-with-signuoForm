@@ -113,7 +113,8 @@ body {
                 border: none;
                 border-bottom: 3px solid hsl(154, 56%, 46%, 1);
                 //box-shadow: 0 0 0 $color-primary;
-                input{
+                button{
+                    border: none;
                     text-transform: uppercase;
                     font-size: $fs-normal;
                     font-family: $ff-primary;
