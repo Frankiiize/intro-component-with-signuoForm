@@ -7,6 +7,8 @@ $color-accent: hsl(248, 32%, 49%);
     // color text
 
 $color-textDark: hsl(249, 10%, 26%);
+$color-textDark-opacity: hsl(249, 10%, 26%,0.2);
+
 $color-textLight: hsl(246, 25%, 77%);
 
 /* ----------/COLORS----------- */
@@ -17,6 +19,7 @@ $ff-primary:  'Poppins', sans-serif;
 
     //font size
 
+$fs-small: 1.3rem;
 $fs-normal: 1.6rem;
 
 /* ----------/FONTS------------ */

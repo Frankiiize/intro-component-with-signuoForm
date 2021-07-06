@@ -13,7 +13,136 @@ html {
 }
 
 body {
+  width: 100%;
+  height: 100vh;
   background-image: url("../../images/bg-intro-mobile.png");
+  background-size: contain;
+  background-position: center 100%;
+  background-color: #ff7a7a;
+}
+
+.container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.header h1 {
+  width: 80%;
+  font-size: 3rem;
+  margin: 60px auto 15px;
+}
+.header p {
+  width: 90%;
+  margin: 0 auto 30px;
+  word-spacing: 3px;
+  font-size: 1.6rem;
+}
+
+.trialContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.trialContainer__card {
+  width: 90%;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  background-color: #6055a5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 7px 1px rgba(62, 60, 73, 0.2);
+}
+.trialContainer__card p {
+  width: 70%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: white;
+}
+.trialContainer__card p strong {
+  font-weight: 700;
+}
+.trialContainer__register {
+  width: 90%;
+  height: auto;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 7px 1px rgba(62, 60, 73, 0.2);
+}
+.trialContainer__register__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px 0px;
+}
+.trialContainer__register__form__label, .trialContainer__register__form__sendBtn {
+  width: 90%;
+  height: 50px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(62, 60, 73, 0.2);
+  border-radius: 5px;
+}
+.trialContainer__register__form__label input, .trialContainer__register__form__sendBtn input {
+  width: 90%;
+  height: 40px;
+  outline: none;
+  border: none;
+  color: #3e3c49;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.trialContainer__register__form__sendBtn {
+  background-color: #38cc8c;
+  border: none;
+  border-bottom: 3px solid #34b77e;
+}
+.trialContainer__register__form__sendBtn input {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  color: white;
+}
+.trialContainer__register__terms {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.trialContainer__register__terms p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  color: #b9b6d3;
+  line-height: 1.5;
+  word-spacing: 1.5px;
+}
+.trialContainer__register__terms p strong {
+  color: #ff7a7a;
 }
 
 /*# sourceMappingURL=styles.css.map */

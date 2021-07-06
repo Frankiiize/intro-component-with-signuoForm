@@ -1,3 +1,143 @@
 body {
+    width: 100%;
+    height: 100vh;
     background-image: url("../../images/bg-intro-mobile.png");
+    //background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 100%;
+    background-color: $color-secondary;
+    //background-clip: border-box;
+}
+.container{
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    width: 100%;
+    //height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: $ff-primary;
+    //font-size: $fs-normal;
+    color: white;
+    //line-height: 1.5;
+    h1 {
+        width: 80%;
+        font-size: 3rem;
+        margin: 60px auto 15px;
+        //padding-top: 80px;
+    }
+    p {
+        width: 90%;
+        margin: 0 auto 30px;
+        word-spacing: 3px;
+        font-size: $fs-normal;
+    }
+}
+.trialContainer{
+    width: 100%;
+    //height: 100%;
+    display: flex;
+    flex-direction: column;
+    &__card {
+        width: 90%;
+        height: 80px;
+        margin: 0 auto 20px;
+        border-radius: 10px;
+        background-color: $color-accent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 7px 1px $color-textDark-opacity;
+        p {
+            width: 70%;
+            text-align: center;
+            font-family: $ff-primary;
+            font-size: $fs-normal;
+            font-weight: 400;
+            color: white;
+            strong {
+                font-weight: 700;
+            }
+            
+        }
+    }
+    &__register{
+        width: 90%;
+        height: auto;
+        margin: 0 auto 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 7px 1px $color-textDark-opacity;
+        &__form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0px 0px;
+            &__label {
+                width: 90%;
+                height: 50px;
+                margin: 10px auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid $color-textDark-opacity;
+                border-radius: 5px;
+                input{
+                    width: 90%;
+                    height: 40px;
+                    outline: none;
+                   //margin-left: 15px;
+                    border: none;
+                    color: $color-textDark;
+                    font-family: $ff-primary;
+                    font-weight: 600;
+                    
+                }
+               
+                  
+            }
+            &__sendBtn{
+                @extend .trialContainer__register__form__label;
+                background-color: $color-primary;
+                border: none;
+                border-bottom: 3px solid hsl(154, 56%, 46%, 1);
+                //box-shadow: 0 0 0 $color-primary;
+                input{
+                    text-transform: uppercase;
+                    font-size: $fs-normal;
+                    font-family: $ff-primary;
+                    background-color: transparent;
+                    color: white;
+                }
+            }
+        }
+        &__terms{
+            width: 100%;
+            text-align: center;
+            padding-bottom: 20px;
+            p{
+                width: 80%;
+                margin: 0 auto;
+                font-size: $ff-primary;
+                font-size: $fs-small;
+                color: $color-textLight;
+                line-height: 1.5;
+                word-spacing: 1.5px;
+                strong{
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
 }
