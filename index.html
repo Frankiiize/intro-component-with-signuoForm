@@ -27,19 +27,27 @@
       <div class="trialContainer__register">
         <form class="trialContainer__register__form" id="form">
           <label class="trialContainer__register__form__label" for="name">
-            <input type="text" id="name" autocomplete="name" name="name"  placeholder="First Name">
+            <input type="text" id="name" autocomplete="name" name="First Name"  placeholder="First Name">
+            <i class="errorIcon"></i>
           </label>
+          <span id="namePrint"></span>
           <label class="trialContainer__register__form__label" for="lastName">
-            <input type="text" id="lastName" autocomplete="family-name" name="lastName"  placeholder="Last Name">
+            <input type="text" id="lastName" autocomplete="Family Name" name="lastName"  placeholder="Last Name">
+            <i class="errorIcon"></i>
           </label>
+          <span id="lastNamePrint"></span>
           <label class="trialContainer__register__form__label" for="Email">
-            <input type="email" id="email" autocomplete="email" name="email"  placeholder="Email Address">
+            <input type="email" id="email" autocomplete="email" name="Email"  placeholder="Email Address">
+            <i class="errorIcon"></i>
           </label>
+          <span id="emailPrint"></span>
           <label class="trialContainer__register__form__label" for="password">
-            <input type="password" id="password" autocomplete="current-password" name="password" placeholder="Password">
+            <input type="password" id="password" autocomplete="current-password" name="Password" placeholder="Password">
+            <i class="errorIcon"></i>
           </label>
+          <span id="passwordPrint"></span>
           <label class="trialContainer__register__form__sendBtn">
-            <button  id="sumitBtn" type="submit" value="Claim your free trial">Claim your free trial</button>
+            <input  id="sumitBtn" type="submit" value="Claim your free trial">
           </label>
         </form>
         <div class="trialContainer__register__terms">

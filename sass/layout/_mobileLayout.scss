@@ -90,22 +90,31 @@ body {
                 margin: 10px auto;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: space-between;
                 border: 1px solid $color-textDark-opacity;
                 border-radius: 5px;
                 input{
                     width: 90%;
                     height: 40px;
                     outline: none;
-                   //margin-left: 15px;
+                    margin-left: 15px;
                     border: none;
                     color: $color-textDark;
                     font-family: $ff-primary;
                     font-weight: 600;
                     
                 }
-               
+              
                   
+            }
+            span {
+                display: inline-flex;
+                width: 90%;
+                align-self: center;
+                justify-content: flex-end;
+                font-family: $ff-primary;
+                font-size: $fs-small;
+                color: $color-secondary;
             }
             &__sendBtn{
                 @extend .trialContainer__register__form__label;
@@ -113,8 +122,8 @@ body {
                 border: none;
                 border-bottom: 3px solid hsl(154, 56%, 46%, 1);
                 //box-shadow: 0 0 0 $color-primary;
-                button{
-                    border: none;
+                input{
+                    //border: none;
                     text-transform: uppercase;
                     font-size: $fs-normal;
                     font-family: $ff-primary;
@@ -141,4 +150,40 @@ body {
             }
         }
     }
+}
+
+.mainSuccess {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__card {
+        width: 80%;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 7px 1px $color-textDark-opacity;
+        p {
+            font-family: $ff-primary;
+            color: $color-primary;
+            font-weight: 500;
+            font-size: $fs-normal;
+        }
+        a {
+            color: $color-secondary;
+            text-decoration: none;
+            font-size: $fs-normal;
+            font-family: $ff-primary;
+        }
+        a:hover{
+            cursor: pointer;
+        }
+    }
+
 }
