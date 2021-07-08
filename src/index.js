@@ -24,8 +24,8 @@ function validadFormulario (ev) {
             if(emailRegex.test(email.value)){
                 console.log('paso');
                 console.log('email valido');
-                this.submit();
-                window.open("html/successRegister.html","_parent")
+                //this.submit();
+                window.open("html/successRegister.html")
             } else {
                 let errE = document.createElement('p');
                 emailPrint.append(errE);
@@ -40,13 +40,11 @@ function validadFormulario (ev) {
                     click = true;
                 },1500);
                 console.log('email no valido');
-                return
             }
             
         } else {
-            //console.log('campo vacio')
+   
             if(name.value.length === 0){
-                //debugger
                 console.log(`${name.name} no puede estar vacio`);
                 let errN = document.createElement('p'); 
                 namePrint.append(errN);
@@ -58,7 +56,7 @@ function validadFormulario (ev) {
                     errIcon[0].classList.remove('d-block');
                     name.placeholder = 'First Name';
                     click = true;
-                },1500);  
+                    },1500);  
                 
             } else if (lastName.value.length === 0) {
                 console.log(`${lastName.name} no puede estar vacio`);
@@ -73,7 +71,7 @@ function validadFormulario (ev) {
                     errIcon[1].classList.remove('d-block');
                     lastName.placeholder = 'Last Name';
                     click = true;
-                },1500); 
+                    },1500); 
             } else if (email.value.length === 0) {
                 console.log(`${email.name} no puede estar vacio`);
                 let errE = document.createElement('p');
@@ -86,7 +84,7 @@ function validadFormulario (ev) {
                     errIcon[2].classList.remove('d-block');
                     email.placeholder = 'Email Address'
                     click = true;
-                },1500);
+                    },1500);
                 
             } else if(password.value.length === 0){
                 console.log(`${password.name} no puede estar vacio`);
@@ -100,21 +98,18 @@ function validadFormulario (ev) {
                     errIcon[3].classList.remove('d-block');
                     password.placeholder = 'Password'
                     click = true;
-                },1500);
+                    },1500);
             } else {
                 console.log('campo vacios');
                 click = true;
             }
             
         }
-        
     } else {
-        return console.log('return');
+        return 
     }
 
 }
-
-
 
 document.addEventListener("DOMContentLoaded",function() {
         form.addEventListener('submit', validadFormulario);
