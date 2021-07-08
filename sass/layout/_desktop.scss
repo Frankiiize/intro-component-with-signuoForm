@@ -21,3 +21,25 @@ body {
         margin: 0 0 0 20px ;
     }
 }
+.trialContainer {
+    &__card {
+        height: 70px;
+    }
+    &__register {
+        &__form {
+            &__sendBtn {
+                input:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        &__terms{ 
+            p {
+                a:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+   
+}

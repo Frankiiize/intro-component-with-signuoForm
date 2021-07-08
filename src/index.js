@@ -50,7 +50,7 @@ function validadFormulario (ev) {
                 namePrint.append(errN);
                 errIcon[0].classList.add('d-block');
                 name.placeholder = '';
-                errN.innerHTML = `${name.name} no puede estar vacio`;
+                errN.innerHTML = `${name.name} can't be empty`;
                 setTimeout(() => {
                     namePrint.removeChild(errN);
                     errIcon[0].classList.remove('d-block');
@@ -59,12 +59,12 @@ function validadFormulario (ev) {
                     },1500);  
                 
             } else if (lastName.value.length === 0) {
-                console.log(`${lastName.name} no puede estar vacio`);
+                console.log(`${lastName.name} can't be empty`);
                 let errL = document.createElement('p');
                 lasNamePrint.append(errL);
                 errIcon[1].classList.add('d-block');
                 lastName.placeholder = ''
-                errL.innerHTML = `${lastName.name} no puede estar vacio`;
+                errL.innerHTML = `${lastName.name} can't be empty`;
                
                 setTimeout(() => {
                     lasNamePrint.removeChild(errL);
@@ -73,12 +73,12 @@ function validadFormulario (ev) {
                     click = true;
                     },1500); 
             } else if (email.value.length === 0) {
-                console.log(`${email.name} no puede estar vacio`);
+                console.log(`${email.name} can't be empty`);
                 let errE = document.createElement('p');
                 emailPrint.append(errE);
                 errIcon[2].classList.add('d-block');
                 email.placeholder = '';
-                errE.innerHTML = `${email.name} no puede estar vacio`;
+                errE.innerHTML = `${email.name} can't be empty`;
                 setTimeout(() => {
                     emailPrint.removeChild(errE);
                     errIcon[2].classList.remove('d-block');
@@ -87,12 +87,12 @@ function validadFormulario (ev) {
                     },1500);
                 
             } else if(password.value.length === 0){
-                console.log(`${password.name} no puede estar vacio`);
+                console.log(`${password.name} can't be empty`);
                 let errP = document.createElement('p');
                 passwordPrint.append(errP);
                 errIcon[3].classList.add('d-block');
                 password.placeholder = '';
-                errP.innerHTML = `${password.name} no puede estar vacio`; 
+                errP.innerHTML = `${password.name} can't be empty`; 
                 setTimeout(() => {
                     passwordPrint.removeChild(errP);
                     errIcon[3].classList.remove('d-block');
@@ -100,7 +100,7 @@ function validadFormulario (ev) {
                     click = true;
                     },1500);
             } else {
-                console.log('campo vacios');
+                console.log(`can't be empty`);
                 click = true;
             }
             

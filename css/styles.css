@@ -70,8 +70,10 @@ body {
 
 .trialContainer {
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .trialContainer__card {
   width: 90%;
@@ -83,6 +85,7 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0 7px 1px rgba(62, 60, 73, 0.2);
+  text-decoration: none;
 }
 .trialContainer__card p {
   width: 70%;
@@ -168,8 +171,9 @@ body {
   line-height: 1.5;
   word-spacing: 1.5px;
 }
-.trialContainer__register__terms p strong {
+.trialContainer__register__terms p a {
   color: #ff7a7a;
+  text-decoration: none;
 }
 
 .mainSuccess {

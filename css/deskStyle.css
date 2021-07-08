@@ -55,4 +55,14 @@ body {
   margin: 0 0 0 20px;
 }
 
+.trialContainer__card {
+  height: 70px;
+}
+.trialContainer__register__form__sendBtn input:hover {
+  cursor: pointer;
+}
+.trialContainer__register__terms p a:hover {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=deskStyle.css.map */
