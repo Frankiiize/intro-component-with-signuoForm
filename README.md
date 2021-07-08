@@ -28,8 +28,8 @@ Users should be able to:
 ![](images/screenShot.png)
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/i-use-html-sass-and-js-8WECuw51P)
-- Live Site URL: [Add live site URL here](https://frankiiize.github.io/intro-component-with-signuoForm/index.html)
+- Solution URL: [Solutions](https://www.frontendmentor.io/solutions/i-use-html-sass-and-js-8WECuw51P)
+- Live Site URL: [Git-hup Pages](https://frankiiize.github.io/intro-component-with-signuoForm/index.html)
 ## My process
 ### Built with
 
